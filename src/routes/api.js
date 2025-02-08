@@ -12,4 +12,8 @@ router.post('/InsertData', studentsController.InsertData)
 router.get('/ReadStudents', studentsController.ReadStudent)
 router.post('/UpdateStudents/:id', studentsController.UpdateStudents)
 router.post('/DeleteStudents/:id', studentsController.DeleteStudent)
+
+//Create JWT token
+router.get("/CreateToken", JWTpractice.CreateToken)
+router.get("/DecodeToken", JWTpractice.DecodeToken)
 module.exports = router
